@@ -20,8 +20,9 @@ body {
 
 #youtube,
 #github,
-#twitter,
-#patreon {
+#example1,
+#example2,
+#example3 {
     font-size: 8em;
     padding: 10px 20px;
     margin: 0 40px;
@@ -30,7 +31,7 @@ body {
     border-radius: 30px;
     /* box-shadow: 2px 2px 2px #00000080, 10px 10px 12px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080; */
     text-shadow: 0px 0px 50px #0072ff, 0px 0px 100px #0072ff, 0px 0px 150px #0072ff, 0px 0px 200px #0072ff;
-    animation: animate 3s linear infinite;
+    animation: animate 5s linear infinite;
     text-decoration: none;
 }
 
@@ -47,127 +48,14 @@ body {
     animation-delay: 0.3s;
 }
 
-#twitter {
+#example1 {
     animation-delay: 0.6s;
 }
 
-#patreon {
+#example2 {
     animation-delay: 0.9s;
 }
 
-selection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.bowl {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background: rgb(255, 255, 255, 0.1);
-    border-radius: 50%;
-    border: 8px solid transparent;
-    animation: animate-bowl 5s linear infinite;
-    transform-origin: bottom;
-}
-
-@keyframes animate-bowl {
-    0% {
-        filter: hue-rotate(0deg);
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(15deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    75% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-        transform: rotate(0deg);
-    }
-}
-
-.bowl::before {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    height: 30px;
-    border: 15px solid #444;
-    border-radius: 50%;
-    box-shadow: 0 10px #222;
-}
-
-.bowl::after {
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 80px;
-    background: rgb(255, 255, 255, 0.05);
-    border-radius: 50%;
-}
-
-.liquid {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background: #41c1fb;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    filter: drop-shadow(0 0 80px #41c1fb);
-    animation: animate-liquid 5s linear infinite;
-    transform-origin: top;
-}
-
-@keyframes animate-liquid {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-20deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    75% {
-        transform: rotate(20deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-.liquid::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    height: 20px;
-    background: #1fa4e0;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 80px #41c1fb);
-}
-
-.shadow {
-    position: absolute;
-    top: calc(50% + 1460px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 30px;
-    background: rgb(0, 0, 0, 0.5);
-    border-radius: 50%;
+#example3 {
+    animation-delay: 1.2s;
 }
